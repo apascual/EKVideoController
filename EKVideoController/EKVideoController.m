@@ -53,7 +53,9 @@
         _moviePlayer = nil;
     }
 
-    _moviePlayer                     = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:videoPath]];
+    _moviePlayer                     = [[MPMoviePlayerController alloc] init];
+    _moviePlayer.movieSourceType     = MPMovieSourceTypeFile;
+    _moviePlayer.contentURL          = [NSURL fileURLWithPath:videoPath];
     _moviePlayer.view.frame          = EK_SCREEN_BOUNDS;
     _moviePlayer.fullscreen          = YES;
     _moviePlayer.controlStyle        = MPMovieControlStyleNone;
