@@ -14,6 +14,8 @@
 
 @interface EKVideoController : UIViewController
 
+@property(nonatomic, strong) MPMoviePlayerController *moviePlayer;
+
 //
 //  VideoPath can be a local file path or an URL.
 //  When it's setted, the view controller initialize and add the video to the view.

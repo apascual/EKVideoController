@@ -11,7 +11,6 @@
 
 @interface EKVideoController()
 
-@property(nonatomic, strong) MPMoviePlayerController *moviePlayer;
 @property(nonatomic, strong) UIView                  *moviePlayerMask;
 
 @end
