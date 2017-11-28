@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Ekhoo. All rights reserved.
 //
 
+@import MediaPlayer;
 #import <UIKit/UIKit.h>
 
 #define EK_SCREEN_BOUNDS [[UIScreen mainScreen] bounds]
